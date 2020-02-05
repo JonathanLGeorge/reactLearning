@@ -14,11 +14,15 @@ import NameListKey from './components/NameListKey';
 import Form from './components/Form';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import Card from "./components/Card";
+import CountryList from './components/CountryList';
 
 function App() {
   return (
 
     <div className="App">
+      
+      
       <Message/>
       <Counter/>
       <FunctionClick/>
@@ -32,6 +36,8 @@ function App() {
       <UserProvider value="Joanthan">
         <ComponentC/>
       </UserProvider>
+    
+      <CountryList/>
     </div>
   );
 }
