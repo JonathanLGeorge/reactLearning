@@ -21,6 +21,8 @@ import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
 import Counter2 from './components/Counter2'
 import ClassCounter from './hooks/ClassCounter';
+import HooksCounter from './hooks/HooksCounter';
+import HookCounter2 from './hooks/HookCounter2';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -75,6 +77,8 @@ function App() {
 */}
           
         <ClassCounter/>
+        <HooksCounter/>
+        <HookCounter2/>
         
 
     </div>

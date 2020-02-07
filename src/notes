@@ -212,3 +212,10 @@ Context:
 
         
 
+//=======================================================================
+Rules for hooks
+
+Only call hooks ar the top leveldont call hooks inside loops, conditions or nested Functions
+
+only call hooks from react Function
+call them from within react functional components and not just any regular Javascript function
