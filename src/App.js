@@ -20,6 +20,7 @@ import ClickCount2 from './components/ClickCount2';
 import HoverCounter2 from './components/HoverCounter2';
 import User from './components/User';
 import Counter2 from './components/Counter2'
+import ClassCounter from './hooks/ClassCounter';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -60,7 +61,7 @@ function App() {
       <ClickCount2/>
       <HoverCounter2/>
       <User render={(isLoggedIn)=>isLoggedIn ? 'Jonathan' : 'Guest'}/>
-       */}
+       
       <Counter2 
         render={(count, incCount)=> (
           <ClickCount2 count={count} incCount={incCount}></ClickCount2>
@@ -70,7 +71,14 @@ function App() {
         render={(count, incCount)=> (
           <HoverCounter2 count={count} incCount={incCount}></HoverCounter2>
         )}/>
+
+*/}
+          
+        <ClassCounter/>
+        
+
     </div>
+
   );
 }
 
