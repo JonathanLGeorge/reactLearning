@@ -16,13 +16,21 @@ import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import Card from "./components/Card";
 import CountryList from './components/CountryList';
-
+import ClickCount2 from './components/ClickCount2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
+import Counter2 from './components/Counter2'
+//import RefsDemo from './components/RefsDemo';
+//import Hero from './components/Hero'
+//import ErrorBoundry from './components/ErrorBoundry';
+//import ClickCounter from './components/ClickCounter';
+//import HoverCounter from './components/HoverCounter';
 function App() {
   return (
 
     <div className="App">
       
-      
+      {/*
       <Message/>
       <Counter/>
       <FunctionClick/>
@@ -38,6 +46,30 @@ function App() {
       </UserProvider>
     
       <CountryList/>
+      
+      <ErrorBoundry>
+        <Hero heroName="Batman"></Hero>
+        <Hero heroName="SuperMan"></Hero>
+        <Hero heroName="Joker"></Hero>
+      </ErrorBoundry>
+
+
+      <ClickCounter/>
+      <HoverCounter/>
+     
+      <ClickCount2/>
+      <HoverCounter2/>
+      <User render={(isLoggedIn)=>isLoggedIn ? 'Jonathan' : 'Guest'}/>
+       */}
+      <Counter2 
+        render={(count, incCount)=> (
+          <ClickCount2 count={count} incCount={incCount}></ClickCount2>
+        )}/>
+
+<Counter2 
+        render={(count, incCount)=> (
+          <HoverCounter2 count={count} incCount={incCount}></HoverCounter2>
+        )}/>
     </div>
   );
 }
