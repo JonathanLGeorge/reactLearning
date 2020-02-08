@@ -219,3 +219,47 @@ Only call hooks ar the top leveldont call hooks inside loops, conditions or nest
 
 only call hooks from react Function
 call them from within react functional components and not just any regular Javascript function
+
+=============================================================================
+useState hooks
+
+-The useState hooks lets you add state to functional components (creating a single state)
+
+-in classes, the state is always an object
+
+-with the useState hook, the state doesnt have to be an object
+
+-the useSate hook returns an array with 2 elements
+
+the first element is the current value of the state, and the second element is a state setter function
+
+ if new state value depends on the previous state value, You can pass a function to either setter function(recieve previous sae as argument)
+
+when dealing with objects or arrays, always make sure to spread your state variable and then call the setter function to get expected behavior
+================================================================================
+useEffects Hook
+
+updating the document title to the curent counter value you would need to 
+
+    //initial render.... excucted once
+    componentDidMount(){
+        document.title = 'you cicked ${this.state.count} times';
+    }
+    //we have a button that changed value... so we need this life cycle
+    componentDidUpdate(){
+        document.title = 'you cicked ${this.state.count} times';
+    }
+
+    what about a timer?
+
+        componentDidMount(){
+            this.interval = setInterval(this.tick, 1000);
+        }
+     
+        componentDidUpdate(){
+            clearInterval(this.interval);
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.interval);
+        }
