@@ -11,7 +11,15 @@ function HookMouseEffect1x() {
     }
     useEffect(() => {
         console.log('useEffevt called');
-        window.addEventListener('mousemove', logMousePosition)
+        window.addEventListener('mousemove', logMousePosition);
+
+        //clean up code in hooks
+        //same as componentWillUnmount() 
+        return () => {
+            console.log("component unmounted");
+            window.removeEventListener('mousemove', logMousePosition);
+        }
+
     }, []) //no reason to rerender
 
     return (
@@ -22,3 +30,4 @@ function HookMouseEffect1x() {
 }
 
 export default HookMouseEffect1x
+//added clean up code
