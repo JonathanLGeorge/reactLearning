@@ -28,11 +28,17 @@ import HookCounterArray from './hooks/HookCounterArray';
 import EffectRender from './hooks/EffectRender';
 import ConditionalRunEffect from './hooks/ConditionalRunEffect';
 import FetchEffects from './hooks/FetchEffects';
+import HookContextF from './hooks/HookContextF';
+import HookContextC from './hooks/HookContextC';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
 //import ClickCounter from './components/ClickCounter';
 //import HoverCounter from './components/HoverCounter';
+
+ export const UserContextHooks = React.createContext();
+ export const ChannelContext = React.createContext();
+
 function App() {
   return (
 
@@ -88,9 +94,14 @@ function App() {
         <HookCounterArray/>
         <EffectRender/>
         <ConditionalRunEffect/>
+         <FetchEffects/>
           */}
         
-        <FetchEffects/>
+      <UserContextHooks.Provider value={'Jonathan'}>
+          <ChannelContext.Provider value={'Codevolution'}>
+            <HookContextC />
+          </ChannelContext.Provider>
+      </UserContextHooks.Provider>
 
     </div>
 

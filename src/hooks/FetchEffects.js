@@ -5,6 +5,12 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
 function FetchEffects() {
+    const [idFromButtonClick, setIdFromButtonClick] = useState(1);
+
+    const handleClick = () => {
+        setIdFromButtonClick(id)
+    }
+
     //const [posts, setPosts] = useState([]);//([]) will initialixz posts to an empty array
     const [post, setPost] = useState({});//empty object instead of array
 
@@ -21,12 +27,13 @@ function FetchEffects() {
         .catch(error => {
             console.log(error)
         })
-    }, [id]) //dont forget the empyt dependencey list, otherwise infinite loop..
+    }, [idFromButtonClick]) //dont forget the empyt dependencey list, otherwise infinite loop..
     return (
         <div>
             <input type="text" value={id} onChange={e => setId(e.target.value)}/>
+            <button type='button' onClick={handleClick}>Fetch Post</button>
             <div>
-                {post.title}
+                {post.body}
             </div>
             {/*<ul>
 
