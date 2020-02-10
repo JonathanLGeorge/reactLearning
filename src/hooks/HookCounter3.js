@@ -28,3 +28,6 @@ function HookCounter3() {
 }
 
 export default HookCounter3
+//spread operator ...
+//this is taking in object name as a whole
+//then updating only first or last name 

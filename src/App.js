@@ -27,6 +27,7 @@ import HookCounter3 from './hooks/HookCounter3';
 import HookCounterArray from './hooks/HookCounterArray';
 import EffectRender from './hooks/EffectRender';
 import ConditionalRunEffect from './hooks/ConditionalRunEffect';
+import FetchEffects from './hooks/FetchEffects';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -89,7 +90,7 @@ function App() {
         <ConditionalRunEffect/>
           */}
         
-        <EffectRender/>
+        <FetchEffects/>
 
     </div>
 

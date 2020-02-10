@@ -18,3 +18,5 @@ function HooksCounter() {
 export default HooksCounter
 // could also have inline arrow function inplace of plusOne
 // () => setCount(count + 1)
+
+
