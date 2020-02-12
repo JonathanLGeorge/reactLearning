@@ -266,3 +266,15 @@ updating the document title to the curent counter value you would need to
 
 could this be better?
 we are writing the same code in some of the lifecyle methods
+=====================================================================
+
+useReducer:
+
+    useReducer(reducerFunction, initialState)
+    newState = reducer(currentState, action)
+    useReducer returns a pair of values. [newState, dispatch]
+
+    useReducer is a hook that is used for state management in React
+    useReducer is related to reducer Functions
+    usereducer(reducer, initialState)
+    reducer(currentState, action)

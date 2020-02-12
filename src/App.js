@@ -30,6 +30,8 @@ import ConditionalRunEffect from './hooks/ConditionalRunEffect';
 import FetchEffects from './hooks/FetchEffects';
 import HookContextF from './hooks/HookContextF';
 import HookContextC from './hooks/HookContextC';
+import Counter2Reducer from './hooks/Counter2Reducer';
+import Counter1_useReducer from './hooks/Counter1_useReducer';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -102,7 +104,7 @@ function App() {
             <HookContextC />
           </ChannelContext.Provider>
       </UserContextHooks.Provider>
-
+      <Counter1_useReducer/>
     </div>
 
   );
