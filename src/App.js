@@ -32,6 +32,7 @@ import HookContextF from './hooks/HookContextF';
 import HookContextC from './hooks/HookContextC';
 import Counter2Reducer from './hooks/Counter2Reducer';
 import Counter1_useReducer from './hooks/Counter1_useReducer';
+import DataFetch2 from './hooks/DataFetch2';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -105,6 +106,7 @@ function App() {
           </ChannelContext.Provider>
       </UserContextHooks.Provider>
       <Counter1_useReducer/>
+      <DataFetch2/>
     </div>
 
   );
