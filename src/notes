@@ -278,3 +278,20 @@ useReducer:
     useReducer is related to reducer Functions
     usereducer(reducer, initialState)
     reducer(currentState, action)
+
+    ====================================================================
+    useState vs useReducer
+
+    senario              useState                 UserReducer
+-----------------------------------------------------------
+Type ofstate        Number, String, Boolean     Object or array
+
+number of 
+state transitions   one or two                  too many 
+
+related state
+transitions         no                          Yes
+
+business logic      no bussiness logic          complex business logic
+
+local vs Global     local                       global

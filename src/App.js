@@ -33,6 +33,8 @@ import HookContextC from './hooks/HookContextC';
 import Counter2Reducer from './hooks/Counter2Reducer';
 import Counter1_useReducer from './hooks/Counter1_useReducer';
 import DataFetch2 from './hooks/DataFetch2';
+import ParentComponent from './hooks/ParentComponent';
+import M_Counter from './memoHook/M_Counter';
 //import RefsDemo from './components/RefsDemo';
 //import Hero from './components/Hero'
 //import ErrorBoundry from './components/ErrorBoundry';
@@ -107,6 +109,8 @@ function App() {
       </UserContextHooks.Provider>
       <Counter1_useReducer/>
       <DataFetch2/>
+      <ParentComponent/>
+      <M_Counter/>
     </div>
 
   );
