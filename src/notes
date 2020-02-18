@@ -295,3 +295,10 @@ transitions         no                          Yes
 business logic      no bussiness logic          complex business logic
 
 local vs Global     local                       global
+========================================================================
+
+learn about useImperitivehandle
+uselayouteffect
+usedebugvalue
+
+HOC pattern render props pattern
