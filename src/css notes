@@ -49,3 +49,24 @@ flex-shrink: 1; //these are ratios not values. so 1xgrowth
 flex-basis:#px //will make width ignored
 
 flex-basis respecs min-width as a lower limit
+
+That flex-basis is a starting point, 
+an ideal or hypothetical size of things 
+before any growing or shrinking happens.
+When shooting horizontally flex-basis deals with width. 
+When shooting vertically it controlsheight.
+
+ If there's not enough space then they'll have to shrink
+according to their flex-shrink ratios. And if there's extra space available
+they can expand to fill it according to their flex-grow ratios if they have any.
+
+The final flex-basis can't be higher than its max-width
+(or max-height when shooting vertically). If itis higher,
+the final flex-basis just becomes that max value.
+
+The final flex-basis also can't be lower than its min-width
+(or min-height when shooting gvertically). If it
+is lower, the final flex-basis just becomes that min value.
+
+It defaults to flex-basis: auto, which means to
+fallback to the width (or the height when shooting vertically).
