@@ -1,0 +1,51 @@
+flexbox:
+	justify-content: flex-start
+
+crossbow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+justify-content: flex-end;
+justify-content: center;
+justify-content: flex-start
+justify-content: space-between; [X--X--X]
+justify-content: space-around;	[-X-X-X-]
+
+flex-direction: row;
+flex-direction: column; -reverse
+
+alignment:
+
+align-items: flex-start; //starts at top(row) or to the right(column)
+align-items: flex-end; // at bottom(row) or to the left(column)
+align-items: stretch; // will stretch the items top to bottom(row), or  right to left(column)
+align-items: center;
+
+align-self
+align-items
+
+crossbow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.target:nth-of-type(2){		[---X-]
+  align-self: flex-start; 	[--X-X]
+}
+
+crossbow { 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.target:nth-of-type(3){
+  align-self: flex-start;
+
+flex-grow: #
+flex-shrink: 1; //these are ratios not values. so 1xgrowth
+flex-basis:#px //will make width ignored
+
+flex-basis respecs min-width as a lower limit
