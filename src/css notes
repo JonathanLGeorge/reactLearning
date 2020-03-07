@@ -70,3 +70,38 @@ is lower, the final flex-basis just becomes that min value.
 
 It defaults to flex-basis: auto, which means to
 fallback to the width (or the height when shooting vertically).
+
+flex-shrink: 0 //means you wont shrink passed flex-basis size
+===============================================================
+order: #;
+flex-wrap: wrap; //flex-wrap:nowrap; is the default
+flex-wrap: wrap-reverse;
+===============================================================
+lines stretch by default, so leaving
+align-content setting off is the same
+as setting it to:
+
+align-content: stretch;
+
+align-content setting is a lot like align-items
+except it controls the wrapped lines rather
+than the individual items in those lines.
+===============================================================
+flex: It's a shortcut for three other settings:
+    flex-grow, flex-shrink, and flex-basis, in that order.
+
+    flex: 1 1 300px //flex-basis will default to 0px if not specified:
+    flex: 1 0 auto //need to set to auto if you want to use its auto value
+
+flex shrink will default to 1
+    flex: 0 300px = flex: 0 1 300px
+
+    flex: 1 = flex: 1 1 0px
+
+flex: auto = flex-grow: 1, flex-shrink: 1, and flex-basis: auto
+flex: none = flex-grow: 0, flex-shrink: 0, and flex-basis: auto
+
+flex: none; =  says listen item: don't grow,
+don't shrink, and just use your width as your basis.
+
+flex-flow: column wrap = flex-direction: column, and flex-wrap: wrap
