@@ -1,0 +1,18 @@
+function construct-memoized-functor (F is a function object parameter)
+    allocate a function object called memoized-version;
+ 
+    let memoized-version(arguments) be
+        if self has no attached array values then [self is a reference to this object]
+            allocate an associative array called values;
+            attach values to self;
+        end if;
+
+        if self.values[arguments] is empty then
+            self.values[arguments] = F(arguments);
+        end if;
+
+        return self.values[arguments];     
+    end let;
+ 
+    return memoized-version;
+end function
