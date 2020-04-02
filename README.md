@@ -1,3 +1,5 @@
+This is mostly just a repository of learning and notes. I have been getting into reactdevelopment and further strengthening my skill set in javascript. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
